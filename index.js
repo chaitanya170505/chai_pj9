@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.set('views', './views');
+app.set('views', './Views');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
