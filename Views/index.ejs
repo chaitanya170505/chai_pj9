@@ -1,0 +1,17 @@
+<%- include("Partials/header.ejs") %>
+<div class="container1">
+  <form action="/submit" method="POST">
+    <label for="url">Enter Url:</label>
+    <input type="text" name="url" required>
+    <div class="ImgUrlDiv">
+      <% if (locals.imagePath) { %>
+        <img src="<%= imagePath %>" alt="Dynamic Image" class="QrImgClass">
+      <% } else { %>
+          <img src="/Assets/reload.png" alt="Default Image" class="QrImgClass">
+      <% } %>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+<%- include("Partials/footer.ejs") %>

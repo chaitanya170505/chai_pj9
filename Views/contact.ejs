@@ -1,0 +1,19 @@
+<%- include("Partials/header.ejs") %>
+<h3>Contact</h3>
+
+<div class="container3">
+  <form action="/submit-contact" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="mail">Email</label>
+    <input type="text" id="mail" name="email" placeholder="Your Email">
+
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="comment" placeholder="Comment" style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<%- include("Partials/footer.ejs") %>
